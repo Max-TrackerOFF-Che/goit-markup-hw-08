@@ -1,0 +1,40 @@
+/* Перечисление особенностей на странице Студия */
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+.features__item {
+  width: 270px;
+
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--button-background);
+    border-radius: 4px;
+  }
+  &.features--satelite::before {
+    background-image: url(../images/satelite.svg);
+    background-size: 65.32px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.features--time::before {
+    background-image: url(../images/time.svg);
+    background-size: 66.96px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.features--laptop::before {
+    background-image: url(../images/laptop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.features--astronaut::before {
+    background-image: url(../images/astronaut.svg);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

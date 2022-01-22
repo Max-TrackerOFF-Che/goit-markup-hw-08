@@ -1,0 +1,75 @@
+.subscribe__button {
+  width: 200px;
+  height: 50px;
+  background: var(--hover-effect);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--hover-effect);
+  border-radius: 4px;
+  color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 29px;
+  transition: 250ms var(--cubic-transition) var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+/* кнопки навигации вверху в портфолио */
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.button {
+  background-color: var(--button-background);
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  white-space: nowrap;
+  padding: 6px 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--hover-effect);
+    color: var(--background-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+/* Кнопка на странице Cтудия */
+.hero__button {
+  background-color: var(--hover-effect);
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+}

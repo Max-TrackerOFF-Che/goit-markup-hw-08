@@ -1,0 +1,43 @@
+// Наша команда
+.team {
+  display: flex;
+  background-color: var(--button-background);
+  justify-content: space-between;
+}
+.team__list-box {
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.team__name {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.team__list-label {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.features__text,
+.team__title {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.team__title {
+  line-height: 1.1;
+}

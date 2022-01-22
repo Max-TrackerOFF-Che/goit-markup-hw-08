@@ -1,0 +1,75 @@
+.logo,
+.footer__logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo {
+  padding-right: 93px;
+  padding-top: 24px;
+}
+
+.logo .web-title,
+.footer__logo .web-title {
+  color: var(--hover-effect);
+}
+.icon--instagram {
+  width: 20px;
+  height: 20px;
+}
+.icon--twitter {
+  width: 20px;
+  height: 16.25px;
+}
+.icon--facebook {
+  width: 10px;
+  height: 20px;
+}
+.icon--linkedin {
+  width: 20px;
+  height: 20px;
+}
+.footer__logo {
+  color: var(--background-color);
+}
+.join__icons-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--button-background);
+  border-radius: 50%;
+  background-color: var(--button-footer-bgc);
+  margin-right: 10px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--hover-effect);
+    fill: white;
+    border-radius: 50%;
+  }
+}
+.button__icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.icon--phone-modal {
+  width: 13px;
+  height: 13px;
+}
+.icon--mail {
+  width: 15px;
+  height: 13px;
+}
+
+.icon--man {
+  width: 12px;
+  height: 12px;
+}
