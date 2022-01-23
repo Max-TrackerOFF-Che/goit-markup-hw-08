@@ -7,18 +7,11 @@
   margin-top: -1px;
 }
 .container {
-  @include respond-to(mobile) {
-    width: 480px;
-  }
-  @include respond-to(tablet) {
-  }
-  @include respond-to(desctop) {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-bottom: 94px;
@@ -63,45 +56,23 @@
   position: relative;
 }
 .nav__main {
-  @include respond-to(mobile) {
-  }
-  @include respond-to(tablet) {
-  }
-  @include respond-to(desctop) {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav__logo {
-  @include respond-to(mobile) {
-    padding-top: 16px;
-    padding-left: 15px;
-    padding-bottom: 16px;
-  }
-  @include respond-to(tablet) {
-  }
-  @include respond-to(desctop) {
-    padding: 0;
-    display: flex;
-    margin-left: 10px;
-  }
+  padding: 0;
+  display: flex;
+  margin-left: 10px;
 }
 .nav__list {
-  @include respond-to(mobile) {
-    display: none;
-  }
-  @include respond-to(tablet) {
-  }
-  @include respond-to(desctop) {
-    display: flex;
-    align-items: center;
-    width: 294px;
-    justify-content: space-between;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  display: flex;
+  align-items: center;
+  width: 294px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
 }
 .menu-button {
   position: absolute;

@@ -1,6 +1,7 @@
 /* Контакты в шапке */
 
 .contacts {
+  display: none;
   @include respond-to(mobile) {
     display: none;
   }
