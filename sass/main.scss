@@ -1,5 +1,6 @@
 // Variables
-@import './utils/_vars';
+@import './utils/mixins/respond';
+@import './utils/variables/vars';
 // base styles
 @import './base/_reset';
 @import './base/_base-styles';
