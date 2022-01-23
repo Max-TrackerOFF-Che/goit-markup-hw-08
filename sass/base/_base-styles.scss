@@ -7,11 +7,18 @@
   margin-top: -1px;
 }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  @include respond-to(mobile) {
+    width: 480px;
+  }
+  @include respond-to(tablet) {
+  }
+  @include respond-to(desctop) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .section {
   padding-bottom: 94px;
@@ -51,24 +58,87 @@
   background-position: center;
 }
 /*-------------- Хэдер------------------- */
-
+.header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
 .nav__main {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include respond-to(mobile) {
+  }
+  @include respond-to(tablet) {
+  }
+  @include respond-to(desctop) {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .nav__logo {
-  display: flex;
-  margin-left: 10px;
+  @include respond-to(mobile) {
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-bottom: 16px;
+  }
+  @include respond-to(tablet) {
+  }
+  @include respond-to(desctop) {
+    padding: 0;
+    display: flex;
+    margin-left: 10px;
+  }
 }
 .nav__list {
-  display: flex;
-  align-items: center;
-  width: 294px;
-  justify-content: space-between;
-  margin-left: 0;
-  margin-right: 0;
+  @include respond-to(mobile) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+  }
+  @include respond-to(desctop) {
+    display: flex;
+    align-items: center;
+    width: 294px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-button {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+  &:hover,
+  &:active {
+    fill: var(--hover-effect);
+  }
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: teal;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  &.is-open {
+    display: block;
+  }
 }
 
 // Футер

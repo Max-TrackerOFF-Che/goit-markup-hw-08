@@ -1,14 +1,11 @@
 $breakpoints: (
   'mobile': (
-    min-width: 319px,
+    min-width: 480px,
   ),
   'tablet': (
-    min-width: 767px,
+    min-width: 768px,
   ),
   'desctop': (
-    min-width: 1280px,
-  ),
-  'desctop-xl': (
-    min-width: 1919px,
+    min-width: 1200px,
   ),
 ) !default;

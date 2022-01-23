@@ -19,6 +19,21 @@
     <div class="nav__main container">
         <nav class="nav__logo">
             <a class="logo" href="./index.html"><span class="web-title">Web</span>Studio</a>
+            <!-- Бургер меня -->
+            <button type="button" class="menu-button is-open" data-menu-button>
+                <svg width="20" height="20"
+                aria-controls="menu-container"
+                aria-expanded="false"
+                area-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="images/icons.svg#icon-close_24px"></use>
+                    <use class="icon-menu" href="images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <div class="menu-container is-open" 
+            id="menu-container"
+            data-menu>
+                контент меню
+            </div>
             <!-- Навигация в шапке -->
             <ul class="nav__list">
                 <li><a class="nav__link current" href="./index.html">Студия</a></li>
@@ -411,6 +426,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

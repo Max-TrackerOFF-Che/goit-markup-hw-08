@@ -1,9 +1,16 @@
 /* Контакты в шапке */
 
 .contacts {
-  display: flex;
-  width: 357px;
-  justify-content: space-between;
+  @include respond-to(mobile) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+  }
+  @include respond-to(desctop) {
+    display: flex;
+    width: 357px;
+    justify-content: space-between;
+  }
 }
 .contacts__link {
   text-decoration: none;
