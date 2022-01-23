@@ -1,30 +1,56 @@
 /* Наши клиенты */
-.clients-box {
-  width: 1170px;
-}
 .our-clients {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .our-clients__item {
   outline: 1px solid var(--icons-color);
-  width: 170px;
-  height: 94px;
+  width: 210px;
+  height: 92px;
   border-radius: 4px;
 
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:nth-child(even)) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 .our-clients__icon {
   width: 106px;
   height: 60px;
-  margin: 16px 32px;
+  margin: 16px 52px;
   fill: var(--icons-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-clients__item:hover {
+// .clients-box {
+//   width: 1170px;
+// }
+// .our-clients {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .our-clients__item {
+//   outline: 1px solid var(--icons-color);
+//   width: 170px;
+//   height: 94px;
+//   border-radius: 4px;
+
+//   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .our-clients__icon {
+//   width: 106px;
+//   height: 60px;
+//   margin: 16px 32px;
+//   fill: var(--icons-color);
+
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+.our-clients__item:hover,
+.our-clients__item:active {
   outline: 1px solid var(--hover-effect);
 }
-.our-clients__item:hover .our-clients__icon {
+.our-clients__item:hover .our-clients__icon,
+.our-clients__item:active .our-clients__icon {
   fill: var(--hover-effect);
 }

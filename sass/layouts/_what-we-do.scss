@@ -1,6 +1,10 @@
+.hidden-padding {
+  padding: 0;
+}
 .portfolio__list {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  // display: flex;
+  // justify-content: space-between;
 }
 .portfolio__thumb {
   position: relative;
