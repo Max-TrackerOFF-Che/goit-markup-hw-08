@@ -13,50 +13,6 @@
     width: 1200px;
   }
 }
-.header {
-  border-bottom: 1px solid #ececec;
-  position: relative;
-}
-.menu-button {
-  position: absolute;
-  right: 23px;
-  top: 22px;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  & .icon-cross {
-    display: none;
-  }
-  &.is-open .icon-cross {
-    display: block;
-  }
-  &.is-open .icon-menu {
-    display: none;
-  }
-  &:hover,
-  &:active {
-    fill: var(--hover-effect);
-  }
-}
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: teal;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  &.is-open {
-    display: block;
-  }
-}
-.nav__logo {
-  padding: 16px 15px;
-}
 .hero {
   background-color: var(--footer-bg-color);
   text-align: center;
@@ -87,15 +43,7 @@
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--footer-bg-color);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
 // .container {
 //   width: 1200px;
 //   padding-left: 15px;
@@ -136,38 +84,4 @@
 //     url(../images/overlay.jpg);
 //   background-repeat: no-repeat;
 //   background-position: center;
-// }
-// /*-------------- Хэдер------------------- */
-
-// .nav__main {
-//   margin: auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-// .nav__logo {
-//   padding: 0;
-//   display: flex;
-//   margin-left: 10px;
-// }
-// .nav__list {
-//   display: flex;
-//   align-items: center;
-//   width: 294px;
-//   justify-content: space-between;
-//   margin-left: 0;
-//   margin-right: 0;
-// }
-
-// // Футер
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background-color: var(--footer-bg-color);
-//   display: flex;
-//   align-items: center;
-// }
-// .footer--align {
-//   display: flex;
-//   align-items: baseline;
 // }

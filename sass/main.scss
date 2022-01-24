@@ -7,20 +7,21 @@
 @import './base/_base-styles';
 @import './base/_normalize';
 // layouts
+@import './layouts/_header';
 @import './layouts/_backdrop';
-@import './layouts/_contacts';
 @import './layouts/_modal';
 @import './layouts/_our-clients';
 @import './layouts/_our-features';
 @import './layouts/_our-team';
 @import './layouts/_projects-grid';
 @import './layouts/_social-media';
-@import './layouts/_subscribe';
 @import './layouts/_what-we-do';
+@import './layouts/_footer';
 
 //components icons-buttons-logos-headers
 @import './components/_logos.scss';
 @import './components/_buttons.scss';
 @import './components/_titles';
+@import './components/_menu';
 //
 // end
