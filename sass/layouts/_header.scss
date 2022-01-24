@@ -3,7 +3,7 @@
   position: relative;
 }
 .nav__logo {
-  padding: 16px 15px;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -11,6 +11,7 @@
   width: 219px;
   margin-bottom: 302px;
   @media screen and (min-width: 768px) {
+    width: 294px;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -54,7 +55,7 @@
     color: var(--hover-effect);
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 23px;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -106,7 +107,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
     margin-left: 84px;
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -120,26 +121,47 @@
   &:focus {
     color: var(--hover-effect);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .contacts__link__phone {
   font-size: 32px;
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1200px) {
   }
 }
 .contacts__email {
-  width: 16px;
-  height: 12px;
   fill: var(--secondary-text-color);
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 .contacts__phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
   fill: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 .social__networks {
   display: flex;

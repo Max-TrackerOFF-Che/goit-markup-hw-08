@@ -389,7 +389,7 @@ summary {
 }
 
 .nav__logo {
-  padding: 16px 15px;
+  padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,6 +405,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .navigation {
+    width: 294px;
     margin-bottom: 0;
   }
 }
@@ -450,7 +451,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .nav__link {
-    padding-bottom: 23px;
+    padding-bottom: 30px;
   }
 }
 
@@ -507,7 +508,7 @@ summary {
   .contacts__item {
     margin-bottom: 0px;
     margin-left: 84px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -524,28 +525,67 @@ summary {
   color: var(--hover-effect);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link__email,
+  .contacts__link__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
 .contacts__link__phone {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts__link__phone {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 .contacts__email {
-  width: 16px;
-  height: 12px;
   fill: var(--secondary-text-color);
-  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__email {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .contacts__phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
   fill: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .social__networks {
@@ -852,6 +892,29 @@ summary {
 }
 
 /* Перечисление особенностей на странице Студия */
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .features__item {
   width: 450px;
 }
@@ -891,6 +954,13 @@ summary {
   background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100%-2 * 30px) / 2);
+        flex-basis: calc((100%-2 * 30px) / 2);
+  }
 }
 
 .team-bcolor {
@@ -978,8 +1048,8 @@ summary {
 
 @media screen and (min-width: 768px) {
   .project-item {
-    -ms-flex-preferred-size: calc((100%-2 * 30px) / 2);
-        flex-basis: calc((100%-2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -987,12 +1057,6 @@ summary {
   .project-item {
     -ms-flex-preferred-size: calc((100%-3 * 30px) / 3);
         flex-basis: calc((100%-3 * 30px) / 3);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .project-item:not(::last-child) {
-    margin-bottom: 30px;
   }
 }
 
