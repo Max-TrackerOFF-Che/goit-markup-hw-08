@@ -18,30 +18,60 @@
     <div class="nav__main container">
         <nav class="nav__logo">
             <a class="logo" href="./index.html"><span class="web-title">Web</span>Studio</a>
-            <!-- Навигация в шапке -->
-            <ul class="nav__list">
-                <li><a class="nav__link " href="./index.html">Студия</a></li>
-                <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav__link current" href="./contacts.html">Контакты</a></li>
-            </ul>
+            <!-- Бургер меня -->
+            <button type="button" class="menu-button is-open" data-menu-button>
+                <svg width="20" height="20" aria-controls="menu-container" aria-expanded="false"
+                    area-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="images/icons.svg#icon-close_24px"></use>
+                    <use class="icon-menu" href="images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <div class="menu-container is-open" id="menu-container" data-menu>
+                <div class="navigation">
+                    <!-- Навигация в шапке -->
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link current" href="./index.html">Студия</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="nav-contacts">
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="/">
+                                <svg class="contacts__email">
+                                    <use href="./images/icons.svg#icon-email"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__item"><a class="contacts__link" href="/">
+                                <svg class="contacts__phone">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                                +380961111111</a>
+                        </li>
+                    </ul>
+                    <ul class="social__networks">
+                        <li class="social__networks--item">
+                            <a class="social__networks--link" href="/">
+                                Instagram </a>
+                        </li>
+                        <li class="social__networks--item">
+                            <a class="social__networks--link" href="/">
+                                Twitter</a>
+                        </li>
+                        <li class="social__networks--item">
+                            <a class="social__networks--link" href="/">
+                                Facebook</a>
+                        </li>
+                        <li class="social__networks--item">
+                            <a class="social__networks--link" href="/">
+                                LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <!-- Контакты -->
-        <ul class="contacts">
-            <li>
-                <a class="contacts__link" href="/">
-                    <svg class="contacts__email">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li><a class="contacts__link" href="/">
-                    <svg class="contacts__phone">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                    +380961111111</a>
-            </li>
-        </ul>
     </div>
 </header>
 
@@ -113,5 +143,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

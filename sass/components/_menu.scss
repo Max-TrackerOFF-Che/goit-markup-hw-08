@@ -29,6 +29,7 @@
   background-color: var(--background-color);
   padding: 48px 40px;
   font-size: 18px;
+  z-index: 9;
 
   @media screen and (max-width: 767px) {
     display: none;

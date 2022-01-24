@@ -111,6 +111,13 @@ img {
   padding-top: 60px;
 }
 
+.construct {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -505,8 +512,8 @@ summary {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 581px;
-  min-width: 528px;
+  min-height: 609px;
+  min-width: 450px;
   background-color: var(--background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -825,19 +832,13 @@ summary {
 /* ---------------Страница Портфолио----------------------- */
 /* Блок проэктов */
 .projects-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  padding: 0;
+  width: 450px;
 }
 
 .project-link {
   text-decoration: none;
   display: block;
+  color: var(--primary-text-color);
 }
 
 .project-link:hover, .project-link:focus {
@@ -854,6 +855,10 @@ summary {
   padding: 20px 24px;
 }
 
+.project-item {
+  margin-bottom: 30px;
+}
+
 .project-text {
   color: var(--secondary-text-color);
   font-size: 16px;
@@ -867,16 +872,8 @@ summary {
   border-right: 1px solid var(--border-color);
 }
 
-.project-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.project-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .project-image {
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1216,6 +1213,50 @@ summary {
   cursor: pointer;
 }
 
+.button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.button {
+  background-color: var(--button-background);
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  white-space: nowrap;
+  padding: 6px 22px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:not(:last-child) {
+  margin-right: 0;
+}
+
+.button:hover, .button:focus {
+  background-color: var(--hover-effect);
+  color: var(--background-color);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 21px;
+}
+
 /* -----------------------Студия------------------------------- */
 /* Большой блок под рекламу  */
 .hero__title {
@@ -1309,6 +1350,7 @@ summary {
   background-color: var(--background-color);
   padding: 48px 40px;
   font-size: 18px;
+  z-index: 9;
 }
 
 @media screen and (max-width: 767px) {
