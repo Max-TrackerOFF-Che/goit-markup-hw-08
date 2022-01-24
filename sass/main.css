@@ -429,6 +429,10 @@ summary {
   margin-bottom: 32px;
 }
 
+.nav__link.current {
+  color: var(--hover-effect);
+}
+
 .contacts {
   width: 296px;
   text-decoration: none;

@@ -37,6 +37,9 @@
 .nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
+.nav__link.current {
+  color: var(--hover-effect);
+}
 // .current.nav__link::after {
 //   position: absolute;
 //   content: '';
@@ -49,9 +52,6 @@
 //   /* opacity: 0; */
 // }
 
-// .nav__link.current {
-//   color: var(--hover-effect);
-// }
 .contacts {
   width: 296px;
   text-decoration: none;
@@ -175,8 +175,5 @@
 // }
 // .nav__link:hover,
 // .nav__link:focus {
-//   color: var(--hover-effect);
-// }
-// .nav__link.current {
 //   color: var(--hover-effect);
 // }
