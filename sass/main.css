@@ -59,7 +59,7 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 480px;
   }
@@ -1350,7 +1350,7 @@ summary {
   background-color: var(--background-color);
   padding: 48px 40px;
   font-size: 18px;
-  z-index: 9;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
