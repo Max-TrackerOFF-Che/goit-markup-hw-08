@@ -7,6 +7,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 10;
   & .icon-cross {
     display: none;
   }
@@ -20,18 +21,34 @@
   &:active {
     fill: var(--hover-effect);
   }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: teal;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  &.is-open {
-    display: block;
+  background-color: var(--background-color);
+  padding: 48px 40px;
+  font-size: 18px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 796px;
+    margin: 0 auto;
+
+    &.is-open {
+      display: block;
+    }
+    &.is-open .contacts__email,
+    &.is-open .contacts__phone {
+      display: none;
+    }
+  }
+  @include respond-to('tablet') {
+    display: flex;
+    flex-grow: 1;
   }
 }
