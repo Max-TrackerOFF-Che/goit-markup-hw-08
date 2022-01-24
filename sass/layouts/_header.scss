@@ -88,7 +88,12 @@
   font-size: 18px;
   line-height: 1.2px;
   letter-spacing: 0.02em;
-  color: var(--hover-effect);
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-effect);
+  }
 }
 
 // .contacts {
