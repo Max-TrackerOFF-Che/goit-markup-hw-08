@@ -63,7 +63,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/overlay-mobile.jpg);
+    url('/images/overlay-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -71,7 +71,7 @@
   padding-top: 118px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: url(/images/overlay-mobile@2x.jpg);
+      background-image: url('/images/overlay-mobile@2x.jpg');
     }
   }
 }
