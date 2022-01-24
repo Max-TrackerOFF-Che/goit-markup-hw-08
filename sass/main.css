@@ -145,6 +145,12 @@ img {
   padding-top: 118px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(/images/overlay-mobile@2x.jpg);
+  }
+}
+
 /* Класс невидимки */
 .hidden {
   width: 1px;
