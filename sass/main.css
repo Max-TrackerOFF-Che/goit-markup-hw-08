@@ -52,6 +52,10 @@ img {
   height: auto;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -632,7 +636,7 @@ summary {
 }
 
 .modal__policy-box {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
