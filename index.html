@@ -24,7 +24,8 @@
                 <svg width="20" height="20"
                 aria-controls="menu-container"
                 aria-expanded="false"
-                area-label="Переключатель мобильного меню">
+                aria-label="Переключатель мобильного меню"
+                role="button">
                     <use class="icon-cross" href="images/icons.svg#icon-close_24px"></use>
                     <use class="icon-menu" href="images/icons.svg#icon-menu_24px"></use>
                 </svg>
@@ -392,8 +393,9 @@
     <!-- нижняя панель контаков -->
     <footer class="footer">       
         <div class="container footer--align">
-            <div>
-                <a class="footer__logo" href="./index.html"><span class="web-title">Web</span>Studio</a>
+            <div class="footer__tablet">
+                <div>
+                    <a class="footer__logo" href="./index.html"><span class="web-title">Web</span>Studio</a>
                     <address>
                         <ul class="address__list">
                             <li class="address__item"><a class="address__link" href="/"> г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -401,40 +403,41 @@
                             <li class="address__item"><a class="address__link" href="/">+380961111111</a></li>
                         </ul>
                     </address>
+                </div>
+                <div class="join__nav">
+                    <h2 class="footer__title">Присоединяйтесь</h2>
+                    <ul class="join__list">
+                        <li class="join__item">
+                            <a href="https://www.instagram.com/" class="join__icons-link">
+                                <svg class="icon--instagram">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="https://www.instagram.com/" class="join__icons-link">
+                                <svg class="icon--twitter">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="https://www.instagram.com/" class="join__icons-link">
+                                <svg class="icon--facebook">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="https://www.instagram.com/" class="join__icons-link">
+                                <svg class="icon--linkedin">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        <div class="join__nav">
-            <h2 class="footer__title">Присоединяйтесь</h2>
-            <ul class="join__list">
-                <li class="join__item">
-                    <a href="https://www.instagram.com/" class="join__icons-link">
-                        <svg class="icon--instagram">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="https://www.instagram.com/" class="join__icons-link">
-                        <svg class="icon--twitter">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="https://www.instagram.com/" class="join__icons-link">
-                        <svg class="icon--facebook">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="join__item">
-                    <a href="https://www.instagram.com/" class="join__icons-link">
-                        <svg class="icon--linkedin">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
             <div class="subscribe__main">
                 <form class="subscribe__form">
                     <h2 class="footer__title">Подпишитесь на рассылку</h2>

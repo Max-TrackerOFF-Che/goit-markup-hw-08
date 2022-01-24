@@ -10,6 +10,11 @@
 .footer__logo {
   color: var(--background-color);
 }
+.logo {
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
+}
 
 .logo .web-title,
 .footer__logo .web-title {

@@ -24,6 +24,12 @@
   display: flex;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .button {
   background-color: var(--button-background);

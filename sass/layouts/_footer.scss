@@ -3,23 +3,38 @@
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 // // Футер
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background-color: var(--footer-bg-color);
-//   display: flex;
-//   align-items: center;
-// }
-// .footer--align {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer {
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+  }
+}
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.footer--align {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 // /* Блок контактов внизу */
 .address__list {
   margin-top: 20px;
@@ -46,12 +61,16 @@
   margin-bottom: 8px;
 }
 /* Секция подписки в футере */
-// .subscribe__main {
-//   margin-left: auto;
-// }
-// .footer__input {
-//   display: flex;
-// }
+.subscribe__main {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.footer__input {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .subscribe__input {
   width: 450px;
   height: 50px;
@@ -69,11 +88,12 @@
   padding: 15px 0px 15px 16px;
   margin: 0 auto;
   margin-bottom: 20px;
-  // width: 358px;
-  //
   &:focus {
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .subscribe__button {
@@ -100,16 +120,20 @@
     background-color: #188ce8;
   }
 }
-// .join__nav {
-//   margin-left: 70px;
-// }
+.join__nav {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
 .join__list {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
-  // width: 206px;
-  // height: 80px;
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    display: flex;
+  }
 }
 .footer__logo {
   color: var(--background-color);
