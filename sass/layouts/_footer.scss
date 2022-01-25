@@ -38,7 +38,10 @@
 // /* Блок контактов внизу */
 .address__list {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 .address__link {
   text-decoration: none;

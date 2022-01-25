@@ -1,5 +1,5 @@
 .menu__button {
-  position: absolute;
+  position: fixed;
   right: 25px;
   top: 22px;
   display: inline-flex;
@@ -32,7 +32,7 @@
     font-size: 18px;
     z-index: 2;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 101%;
