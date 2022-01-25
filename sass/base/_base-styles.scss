@@ -22,8 +22,6 @@ body.modal-open {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/overlay-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -33,6 +31,20 @@ body.modal-open {
     .hero {
       background-image: url('../images/overlay-mobile@2x.jpg');
     }
+  }
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay-mobile.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay-tablet.jpg');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay.jpg');
+    height: 600px;
+    padding-top: 200px;
   }
 }
 /* Класс невидимки */
