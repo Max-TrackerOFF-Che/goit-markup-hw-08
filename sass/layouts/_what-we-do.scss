@@ -3,8 +3,10 @@
 }
 .portfolio__list {
   display: none;
-  // display: flex;
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .portfolio__thumb {
   position: relative;

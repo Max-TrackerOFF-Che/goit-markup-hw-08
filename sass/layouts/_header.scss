@@ -16,6 +16,7 @@
   @media screen and (min-width: 768px) {
     width: 294px;
     margin-bottom: 0;
+    margin-right: 84px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 305px;
@@ -95,7 +96,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
   }
 }
 .contacts__item {
